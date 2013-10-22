@@ -1,0 +1,8 @@
+4-3-13
+
+There is a permission called "ACCESS_SURFACE_FLINGER" that "allows an application to use SurfaceFlinger's low level features.
+
+SET_ACTIVITY_WATCHER - Allows an application to watch and control how activities are started globally in the system. Only for is in debugging (usually the monkey command).
+
+GET_TASKS - Allows an application to get information about the currently or recently running tasks.
+REORDER_TASKS - Allows an application to change the Z-order of tasks

@@ -1,0 +1,213 @@
+03-27 19:31:38.454: D/AndroidRuntime(289): >>>>>>>>>>>>>> AndroidRuntime START <<<<<<<<<<<<<<
+03-27 19:31:38.454: D/AndroidRuntime(289): CheckJNI is ON
+03-27 19:31:38.874: D/AndroidRuntime(289): --- registering native functions ---
+03-27 19:31:38.944: I/(288): ServiceManager: 0xacd0
+03-27 19:31:38.944: D/AudioHardwareInterface(288): setMode(NORMAL)
+03-27 19:31:38.964: I/CameraService(288): CameraService started: pid=288
+03-27 19:31:38.994: I/AudioFlinger(288): AudioFlinger's thread 0xb3f0 ready to run
+03-27 19:31:39.404: I/SamplingProfilerIntegration(289): Profiler is disabled.
+03-27 19:31:39.484: I/Zygote(289): Preloading classes...
+03-27 19:31:39.494: D/dalvikvm(289): GC_EXPLICIT freed 816 objects / 47208 bytes in 7ms
+03-27 19:31:39.854: D/dalvikvm(289): GC_EXPLICIT freed 219 objects / 13560 bytes in 13ms
+03-27 19:31:39.954: D/dalvikvm(289): GC_EXPLICIT freed 253 objects / 14336 bytes in 13ms
+03-27 19:31:40.044: D/dalvikvm(289): GC_EXPLICIT freed 468 objects / 28976 bytes in 15ms
+03-27 19:31:40.434: D/dalvikvm(289): GC_EXPLICIT freed 2088 objects / 108224 bytes in 15ms
+03-27 19:31:40.694: W/MediaProfiles(289): could not find media config xml file
+03-27 19:31:40.734: D/dalvikvm(289): GC_EXPLICIT freed 279 objects / 15992 bytes in 18ms
+03-27 19:31:41.154: D/dalvikvm(289): GC_FOR_MALLOC freed 5048 objects / 224320 bytes in 37ms
+03-27 19:31:42.175: D/dalvikvm(289): GC_FOR_MALLOC freed 11261 objects / 381176 bytes in 42ms
+03-27 19:31:42.564: D/dalvikvm(289): GC_FOR_MALLOC freed 9802 objects / 462000 bytes in 42ms
+03-27 19:31:42.934: D/dalvikvm(289): GC_FOR_MALLOC freed 8677 objects / 421712 bytes in 55ms
+03-27 19:31:43.454: D/dalvikvm(289): GC_FOR_MALLOC freed 7656 objects / 458144 bytes in 54ms
+03-27 19:31:43.924: D/dalvikvm(289): GC_FOR_MALLOC freed 7300 objects / 455768 bytes in 45ms
+03-27 19:31:44.504: D/dalvikvm(289): GC_FOR_MALLOC freed 8515 objects / 515832 bytes in 55ms
+03-27 19:31:45.044: D/dalvikvm(289): GC_FOR_MALLOC freed 7775 objects / 485776 bytes in 45ms
+03-27 19:31:45.084: D/dalvikvm(289): GC_EXPLICIT freed 185 objects / 9704 bytes in 16ms
+03-27 19:31:45.314: D/dalvikvm(289): GC_EXPLICIT freed 596 objects / 29144 bytes in 36ms
+03-27 19:31:45.394: D/dalvikvm(289): GC_EXPLICIT freed 449 objects / 25136 bytes in 38ms
+03-27 19:31:45.684: D/dalvikvm(289): GC_EXPLICIT freed 308 objects / 35128 bytes in 53ms
+03-27 19:31:45.834: D/dalvikvm(289): GC_EXPLICIT freed 279 objects / 18880 bytes in 54ms
+03-27 19:31:46.174: D/dalvikvm(289): GC_EXPLICIT freed 341 objects / 18472 bytes in 44ms
+03-27 19:31:46.424: D/dalvikvm(289): GC_EXPLICIT freed 449 objects / 28288 bytes in 45ms
+03-27 19:31:48.054: D/dalvikvm(289): GC_EXPLICIT freed 529 objects / 53200 bytes in 56ms
+03-27 19:31:48.174: D/dalvikvm(289): GC_EXPLICIT freed 623 objects / 34008 bytes in 57ms
+03-27 19:31:48.304: D/dalvikvm(289): GC_EXPLICIT freed 861 objects / 46880 bytes in 48ms
+03-27 19:31:48.524: D/dalvikvm(289): GC_EXPLICIT freed 1747 objects / 85504 bytes in 59ms
+03-27 19:31:48.644: D/dalvikvm(289): GC_EXPLICIT freed 447 objects / 29424 bytes in 63ms
+03-27 19:31:48.794: D/dalvikvm(289): GC_EXPLICIT freed 315 objects / 20216 bytes in 73ms
+03-27 19:31:48.794: I/Zygote(289): ...preloaded 1265 classes in 9318ms.
+03-27 19:31:48.794: E/Zygote(289): setreuid() failed. errno: 17
+03-27 19:31:48.864: D/dalvikvm(289): GC_EXPLICIT freed 104 objects / 14232 bytes in 65ms
+03-27 19:31:48.984: I/Zygote(289): Preloading resources...
+03-27 19:31:49.065: D/dalvikvm(289): GC_EXTERNAL_ALLOC freed 10 objects / 392 bytes in 49ms
+03-27 19:31:49.094: W/Zygote(289): Preloaded drawable resource #0x1080093 (res/drawable-mdpi/sym_def_app_icon.png) that varies with configuration!!
+03-27 19:31:49.094: W/Zygote(289): Preloaded drawable resource #0x1080002 (res/drawable-mdpi/arrow_down_float.png) that varies with configuration!!
+03-27 19:31:49.204: W/Zygote(289): Preloaded drawable resource #0x10800b3 (res/drawable/btn_check.xml) that varies with configuration!!
+03-27 19:31:49.204: W/Zygote(289): Preloaded drawable resource #0x10800b6 (res/drawable-mdpi/btn_check_label_background.9.png) that varies with configuration!!
+03-27 19:31:49.204: W/Zygote(289): Preloaded drawable resource #0x10800b7 (res/drawable-mdpi/btn_check_off.png) that varies with configuration!!
+03-27 19:31:49.204: W/Zygote(289): Preloaded drawable resource #0x10800bc (res/drawable-mdpi/btn_check_on.png) that varies with configuration!!
+03-27 19:31:49.244: W/Zygote(289): Preloaded drawable resource #0x1080004 (res/drawable/btn_default.xml) that varies with configuration!!
+03-27 19:31:49.284: W/Zygote(289): Preloaded drawable resource #0x1080005 (res/drawable/btn_default_small.xml) that varies with configuration!!
+03-27 19:31:49.354: W/Zygote(289): Preloaded drawable resource #0x1080006 (res/drawable/btn_dropdown.xml) that varies with configuration!!
+03-27 19:31:49.424: W/Zygote(289): Preloaded drawable resource #0x1080008 (res/drawable/btn_plus.xml) that varies with configuration!!
+03-27 19:31:49.484: W/Zygote(289): Preloaded drawable resource #0x1080007 (res/drawable/btn_minus.xml) that varies with configuration!!
+03-27 19:31:49.545: D/dalvikvm(289): GC_EXPLICIT freed 415 objects / 22384 bytes in 62ms
+03-27 19:31:49.624: W/Zygote(289): Preloaded drawable resource #0x1080009 (res/drawable/btn_radio.xml) that varies with configuration!!
+03-27 19:31:49.704: W/Zygote(289): Preloaded drawable resource #0x108000a (res/drawable/btn_star.xml) that varies with configuration!!
+03-27 19:31:49.715: W/Zygote(289): Preloaded drawable resource #0x1080131 (res/drawable/btn_toggle.xml) that varies with configuration!!
+03-27 19:31:49.725: W/Zygote(289): Preloaded drawable resource #0x1080194 (res/drawable-mdpi/ic_emergency.png) that varies with configuration!!
+03-27 19:31:49.735: W/Zygote(289): Preloaded drawable resource #0x1080012 (res/drawable-mdpi/divider_horizontal_bright.9.png) that varies with configuration!!
+03-27 19:31:49.735: W/Zygote(289): Preloaded drawable resource #0x1080014 (res/drawable-mdpi/divider_horizontal_dark.9.png) that varies with configuration!!
+03-27 19:31:49.775: W/Zygote(289): Preloaded drawable resource #0x1080016 (res/drawable/edit_text.xml) that varies with configuration!!
+03-27 19:31:49.795: W/Zygote(289): Preloaded drawable resource #0x108016d (res/drawable/expander_group.xml) that varies with configuration!!
+03-27 19:31:49.855: W/Zygote(289): Preloaded drawable resource #0x1080062 (res/drawable/list_selector_background.xml) that varies with configuration!!
+03-27 19:31:49.855: W/Zygote(289): Preloaded drawable resource #0x1080227 (res/drawable-mdpi/menu_background.9.png) that varies with configuration!!
+03-27 19:31:49.865: W/Zygote(289): Preloaded drawable resource #0x1080228 (res/drawable-mdpi/menu_background_fill_parent_width.9.png) that varies with configuration!!
+03-27 19:31:49.895: W/Zygote(289): Preloaded drawable resource #0x1080229 (res/drawable/menu_selector.xml) that varies with configuration!!
+03-27 19:31:49.925: W/Zygote(289): Preloaded drawable resource #0x1080234 (res/drawable-mdpi/panel_background.9.png) that varies with configuration!!
+03-27 19:31:49.975: D/dalvikvm(289): GC_EXPLICIT freed 596 objects / 31968 bytes in 51ms
+03-27 19:31:50.005: W/Zygote(289): Preloaded drawable resource #0x108023b (res/drawable-mdpi/popup_bottom_bright.9.png) that varies with configuration!!
+03-27 19:31:50.005: W/Zygote(289): Preloaded drawable resource #0x108023c (res/drawable-mdpi/popup_bottom_dark.9.png) that varies with configuration!!
+03-27 19:31:50.035: W/Zygote(289): Preloaded drawable resource #0x108023d (res/drawable-mdpi/popup_bottom_medium.9.png) that varies with configuration!!
+03-27 19:31:50.035: W/Zygote(289): Preloaded drawable resource #0x108023e (res/drawable-mdpi/popup_center_bright.9.png) that varies with configuration!!
+03-27 19:31:50.035: W/Zygote(289): Preloaded drawable resource #0x108023f (res/drawable-mdpi/popup_center_dark.9.png) that varies with configuration!!
+03-27 19:31:50.045: W/Zygote(289): Preloaded drawable resource #0x1080242 (res/drawable-mdpi/popup_full_dark.9.png) that varies with configuration!!
+03-27 19:31:50.055: W/Zygote(289): Preloaded drawable resource #0x1080245 (res/drawable-mdpi/popup_top_bright.9.png) that varies with configuration!!
+03-27 19:31:50.065: W/Zygote(289): Preloaded drawable resource #0x1080246 (res/drawable-mdpi/popup_top_dark.9.png) that varies with configuration!!
+03-27 19:31:50.115: W/Zygote(289): Preloaded drawable resource #0x108006d (res/drawable/progress_indeterminate_horizontal.xml) that varies with configuration!!
+03-27 19:31:50.115: W/Zygote(289): Preloaded drawable resource #0x108024c (res/drawable/progress_small.xml) that varies with configuration!!
+03-27 19:31:50.125: W/Zygote(289): Preloaded drawable resource #0x108024d (res/drawable/progress_small_titlebar.xml) that varies with configuration!!
+03-27 19:31:50.135: W/Zygote(289): Preloaded drawable resource #0x1080270 (res/drawable-mdpi/scrollbar_handle_horizontal.9.png) that varies with configuration!!
+03-27 19:31:50.145: W/Zygote(289): Preloaded drawable resource #0x1080271 (res/drawable-mdpi/scrollbar_handle_vertical.9.png) that varies with configuration!!
+03-27 19:31:50.165: W/Zygote(289): Preloaded drawable resource #0x1080071 (res/drawable/spinner_dropdown_background.xml) that varies with configuration!!
+03-27 19:31:50.185: W/Zygote(289): Preloaded drawable resource #0x1080354 (res/drawable-mdpi/title_bar_shadow.9.png) that varies with configuration!!
+03-27 19:31:50.185: W/Zygote(289): Preloaded drawable resource #0x10801d6 (res/drawable-mdpi/indicator_code_lock_drag_direction_green_up.png) that varies with configuration!!
+03-27 19:31:50.195: W/Zygote(289): Preloaded drawable resource #0x10801d7 (res/drawable-mdpi/indicator_code_lock_drag_direction_red_up.png) that varies with configuration!!
+03-27 19:31:50.225: W/Zygote(289): Preloaded drawable resource #0x10801d8 (res/drawable-mdpi/indicator_code_lock_point_area_default.png) that varies with configuration!!
+03-27 19:31:50.235: W/Zygote(289): Preloaded drawable resource #0x10801d9 (res/drawable-mdpi/indicator_code_lock_point_area_green.png) that varies with configuration!!
+03-27 19:31:50.245: W/Zygote(289): Preloaded drawable resource #0x10801da (res/drawable-mdpi/indicator_code_lock_point_area_red.png) that varies with configuration!!
+03-27 19:31:50.275: W/Zygote(289): Preloaded drawable resource #0x10801e8 (res/drawable-mdpi/jog_tab_bar_left_end_confirm_gray.9.png) that varies with configuration!!
+03-27 19:31:50.275: W/Zygote(289): Preloaded drawable resource #0x10801ec (res/drawable-mdpi/jog_tab_bar_left_end_normal.9.png) that varies with configuration!!
+03-27 19:31:50.295: W/Zygote(289): Preloaded drawable resource #0x10801ed (res/drawable-mdpi/jog_tab_bar_left_end_pressed.9.png) that varies with configuration!!
+03-27 19:31:50.305: W/Zygote(289): Preloaded drawable resource #0x10801f1 (res/drawable-mdpi/jog_tab_bar_right_end_confirm_gray.9.png) that varies with configuration!!
+03-27 19:31:50.365: D/dalvikvm(289): GC_EXPLICIT freed 653 objects / 41792 bytes in 53ms
+03-27 19:31:50.385: W/Zygote(289): Preloaded drawable resource #0x10801f5 (res/drawable-mdpi/jog_tab_bar_right_end_normal.9.png) that varies with configuration!!
+03-27 19:31:50.415: W/Zygote(289): Preloaded drawable resource #0x10801f6 (res/drawable-mdpi/jog_tab_bar_right_end_pressed.9.png) that varies with configuration!!
+03-27 19:31:50.445: W/Zygote(289): Preloaded drawable resource #0x10801fb (res/drawable-mdpi/jog_tab_left_confirm_gray.png) that varies with configuration!!
+03-27 19:31:50.465: W/Zygote(289): Preloaded drawable resource #0x1080200 (res/drawable-mdpi/jog_tab_left_normal.png) that varies with configuration!!
+03-27 19:31:50.525: D/dalvikvm(289): GC_EXTERNAL_ALLOC freed 238 objects / 12840 bytes in 63ms
+03-27 19:31:50.545: W/Zygote(289): Preloaded drawable resource #0x1080201 (res/drawable-mdpi/jog_tab_left_pressed.png) that varies with configuration!!
+03-27 19:31:50.565: W/Zygote(289): Preloaded drawable resource #0x1080203 (res/drawable-mdpi/jog_tab_right_confirm_gray.png) that varies with configuration!!
+03-27 19:31:50.575: W/Zygote(289): Preloaded drawable resource #0x1080209 (res/drawable-mdpi/jog_tab_right_normal.png) that varies with configuration!!
+03-27 19:31:50.605: W/Zygote(289): Preloaded drawable resource #0x108020a (res/drawable-mdpi/jog_tab_right_pressed.png) that varies with configuration!!
+03-27 19:31:50.615: W/Zygote(289): Preloaded drawable resource #0x108020d (res/drawable-mdpi/jog_tab_target_gray.png) that varies with configuration!!
+03-27 19:31:50.615: I/Zygote(289): ...preloaded 61 resources in 1620ms.
+03-27 19:31:50.645: I/Zygote(289): ...preloaded 15 resources in 28ms.
+03-27 19:31:50.705: D/dalvikvm(289): GC_EXPLICIT freed 179 objects / 13592 bytes in 60ms
+03-27 19:31:50.785: D/dalvikvm(289): GC_EXPLICIT freed 140 objects / 5672 bytes in 75ms
+03-27 19:31:50.845: D/dalvikvm(289): GC_EXPLICIT freed 2 objects / 48 bytes in 61ms
+03-27 19:31:50.865: I/dalvikvm(289): System server process 294 has been created
+03-27 19:31:50.865: I/Zygote(289): Accepting command socket connections
+03-27 19:31:51.225: E/BatteryService(294): usbOnlinePath not found
+03-27 19:31:51.225: E/BatteryService(294): batteryVoltagePath not found
+03-27 19:31:51.225: E/BatteryService(294): batteryTemperaturePath not found
+03-27 19:31:51.255: I/sysproc(294): Entered system_init()
+03-27 19:31:51.255: I/sysproc(294): ServiceManager: 0x135298
+03-27 19:31:51.255: I/SurfaceFlinger(294): SurfaceFlinger is starting
+03-27 19:31:51.255: I/SurfaceFlinger(294): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+03-27 19:31:51.265: E/SurfaceFlinger(294): Couldn't open /sys/power/wait_for_fb_sleep or /sys/power/wait_for_fb_wake
+03-27 19:31:51.325: I/gralloc(294): using (fd=25)
+03-27 19:31:51.325: I/gralloc(294): id           = 
+03-27 19:31:51.325: I/gralloc(294): xres         = 240 px
+03-27 19:31:51.325: I/gralloc(294): yres         = 400 px
+03-27 19:31:51.325: I/gralloc(294): xres_virtual = 240 px
+03-27 19:31:51.325: I/gralloc(294): yres_virtual = 800 px
+03-27 19:31:51.325: I/gralloc(294): bpp          = 16
+03-27 19:31:51.325: I/gralloc(294): r            = 11:5
+03-27 19:31:51.325: I/gralloc(294): g            =  5:6
+03-27 19:31:51.325: I/gralloc(294): b            =  0:5
+03-27 19:31:51.325: I/gralloc(294): width        = 37 mm (164.756760 dpi)
+03-27 19:31:51.325: I/gralloc(294): height       = 62 mm (163.870972 dpi)
+03-27 19:31:51.325: I/gralloc(294): refresh rate = 60.00 Hz
+03-27 19:31:51.325: D/libEGL(294): egl.cfg not found, using default config
+03-27 19:31:51.325: D/libEGL(294): loaded /system/lib/egl/libGLES_android.so
+03-27 19:31:51.345: I/SurfaceFlinger(294): EGL informations:
+03-27 19:31:51.345: I/SurfaceFlinger(294): # of configs : 8
+03-27 19:31:51.345: I/SurfaceFlinger(294): vendor    : Android
+03-27 19:31:51.345: I/SurfaceFlinger(294): version   : 1.4 Android META-EGL
+03-27 19:31:51.345: I/SurfaceFlinger(294): extensions: EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle EGL_ANDROID_get_render_buffer 
+03-27 19:31:51.345: I/SurfaceFlinger(294): Client API: OpenGL ES
+03-27 19:31:51.345: I/SurfaceFlinger(294): EGLSurface: 5-6-5-0, config=0x1000000
+03-27 19:31:51.345: I/SurfaceFlinger(294): flags     : 001c0000
+03-27 19:31:51.345: I/SurfaceFlinger(294): OpenGL informations:
+03-27 19:31:51.345: I/SurfaceFlinger(294): vendor    : Android
+03-27 19:31:51.345: I/SurfaceFlinger(294): renderer  : Android PixelFlinger 1.3
+03-27 19:31:51.345: I/SurfaceFlinger(294): version   : OpenGL ES-CM 1.0
+03-27 19:31:51.345: I/SurfaceFlinger(294): extensions: GL_OES_byte_coordinates GL_OES_fixed_point GL_OES_single_precision GL_OES_read_format GL_OES_compressed_paletted_texture GL_OES_draw_texture GL_OES_matrix_get GL_OES_query_matrix GL_OES_EGL_image GL_OES_compressed_ETC1_RGB8_texture GL_ARB_texture_compression GL_ARB_texture_non_power_of_two GL_ANDROID_user_clip_plane GL_ANDROID_vertex_buffer_object GL_ANDROID_generate_mipmap 
+03-27 19:31:51.355: I/SurfaceFlinger(294): GL_MAX_TEXTURE_SIZE = 4096
+03-27 19:31:51.355: I/SurfaceFlinger(294): GL_MAX_VIEWPORT_DIMS = 4096
+03-27 19:31:51.355: I/sysproc(294): System server: starting Android runtime.
+03-27 19:31:51.355: I/sysproc(294): System server: starting Android services.
+03-27 19:31:51.365: I/SystemServer(294): Entered the Android system server!
+03-27 19:31:51.375: I/sysproc(294): System server: entering thread pool.
+03-27 19:31:51.385: I/SystemServer(294): Entropy Service
+03-27 19:31:51.455: I/SystemServer(294): Power Manager
+03-27 19:31:51.485: I/SystemServer(294): Activity Manager
+03-27 19:31:51.515: I/ActivityManager(294): Memory class: 24
+03-27 19:31:51.615: D/libEGL(304): egl.cfg not found, using default config
+03-27 19:31:51.625: D/libEGL(304): loaded /system/lib/egl/libGLES_android.so
+03-27 19:31:51.635: W/zipro(304): Unable to open zip '/data/local/bootanimation.zip': No such file or directory
+03-27 19:31:51.635: W/zipro(304): Unable to open zip '/system/media/bootanimation.zip': No such file or directory
+03-27 19:31:51.725: I/ARMAssembler(294): generated scanline__00000077:03010104_00000004_00000000 [ 22 ipp] (41 ins) at [0x283d48:0x283dec] in 3068970 ns
+03-27 19:31:51.755: I/ARMAssembler(304): generated scanline__00000077:03545404_00000A01_00000000 [ 30 ipp] (51 ins) at [0x1be40:0x1bf0c] in 1832424 ns
+03-27 19:31:51.985: I/SystemServer(294): Telephony Registry
+03-27 19:31:51.985: I/SystemServer(294): Package Manager
+03-27 19:31:52.015: I/Installer(294): connecting...
+03-27 19:31:52.015: I/installd(35): new connection
+03-27 19:31:52.105: I/PackageManager(294): Libs: android.test.runner:/system/framework/android.test.runner.jar javax.obex:/system/framework/javax.obex.jar
+03-27 19:31:52.105: I/PackageManager(294): Features: android.hardware.camera android.hardware.camera.autofocus
+03-27 19:31:52.325: D/dalvikvm(294): GC_FOR_MALLOC freed 5203 objects / 231168 bytes in 95ms
+03-27 19:31:52.655: W/PackageManager(294): Running ENG build: no pre-dexopt!
+03-27 19:31:52.715: D/PackageManager(294): Scanning app dir /system/framework
+03-27 19:31:52.895: D/PackageManager(294): Scanning app dir /system/app
+03-27 19:31:53.185: D/dalvikvm(294): GC_FOR_MALLOC freed 7327 objects / 361632 bytes in 98ms
+03-27 19:31:53.995: D/dalvikvm(294): GC_FOR_MALLOC freed 5398 objects / 296496 bytes in 95ms
+03-27 19:31:54.505: D/PackageManager(294): Scanning app dir /data/app
+03-27 19:31:54.875: D/dalvikvm(294): GC_FOR_MALLOC freed 7088 objects / 372472 bytes in 99ms
+03-27 19:31:55.005: W/PackageParser(294): No actions in intent filter at /data/app/ApiDemos.apk Binary XML file line #1841
+03-27 19:31:55.005: W/PackageParser(294): No actions in intent filter at /data/app/ApiDemos.apk Binary XML file line #1847
+03-27 19:31:55.025: W/PackageManager(294): Package com.example.android.apis desires unavailable shared library com.example.will.never.exist; ignoring!
+03-27 19:31:55.075: D/PackageManager(294): Scanning app dir /data/app-private
+03-27 19:31:55.075: I/PackageManager(294): Time to scan packages: 2.416 seconds
+03-27 19:31:55.075: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.contacts
+03-27 19:31:55.085: W/PackageManager(294): Unknown permission android.permission.ADD_SYSTEM_SERVICE in package com.android.phone
+03-27 19:31:55.085: W/PackageManager(294): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x1be45)
+03-27 19:31:55.095: W/PackageManager(294): Unknown permission com.google.android.gm.permission.WRITE_GMAIL in package com.android.settings
+03-27 19:31:55.095: W/PackageManager(294): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.android.settings
+03-27 19:31:55.095: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+03-27 19:31:55.105: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.contacts
+03-27 19:31:55.105: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cp in package com.android.providers.contacts
+03-27 19:31:55.105: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+03-27 19:31:55.105: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+03-27 19:31:55.105: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+03-27 19:31:55.115: W/PackageManager(294): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+03-27 19:31:55.365: D/dalvikvm(294): GC_EXPLICIT freed 5248 objects / 322136 bytes in 86ms
+03-27 19:31:55.375: I/SystemServer(294): Account Manager
+03-27 19:31:55.485: I/SystemServer(294): Content Manager
+03-27 19:31:55.575: I/SystemServer(294): System Content Providers
+03-27 19:31:55.575: I/ActivityThread(294): Publishing provider settings: com.android.providers.settings.SettingsProvider
+03-27 19:31:55.635: I/SystemServer(294): Battery Service
+03-27 19:31:55.665: I/SystemServer(294): Lights Service
+03-27 19:31:55.665: I/SystemServer(294): Vibrator Service
+03-27 19:31:55.665: D/qemud(38): fdhandler_accept_event: accepting on fd 10
+03-27 19:31:55.665: D/qemud(38): created client 0xc038 listening on fd 12
+03-27 19:31:55.665: D/qemud(38): client_fd_receive: attempting registration for service 'hw-control'
+03-27 19:31:55.665: D/qemud(38): client_fd_receive:    -> received channel id 11
+03-27 19:31:55.675: D/qemud(38): client_registration: registration succeeded for client 11
+03-27 19:31:55.745: I/SystemServer(294): Alarm Manager
+03-27 19:31:55.745: I/SystemServer(294): Init Watchdog
+03-27 19:31:55.745: I/SystemServer(294): Sensor Service
+03-27 19:31:55.755: D/qemud(38): fdhandler_accept_event: accepting on fd 10
+03-27 19:31:55.755: D/qemud(38): created client 0x12f88 listening on fd 13
+03-27 19:31:55.755: D/qemud(38): client_fd_receive: attempting registration for service 'sensors'
+03-27 19:31:55.755: D/qemud(38): client_fd_receive:    -> received channel id 12

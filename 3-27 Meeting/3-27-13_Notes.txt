@@ -1,0 +1,8 @@
+Each "application" gets its own security sandbox, process, and Dalvik VM instance. The Zygote is responsible for creating new VMs.
+
+
+from the LogCat Dump:
+03-27 19:31:33.514: E/dalvikvm(59): Excessive JNI global references (2001)
+03-27 19:31:33.514: E/dalvikvm(59): VM aborting
+
+There it is. 

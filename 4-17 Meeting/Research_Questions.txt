@@ -1,0 +1,63 @@
+Research Questions
+
+1. Where does Android put saved instance information?
+	a. What kind of memory does it use?	
+	b. Where does Android expect to put saved states?
+		The Dalvik VM for that process must store it.
+
+from <http://developer.android.com/training/basics/activity-lifecycle/recreating.html>
+If the Activity's finish() method is called, then the system no longer stores the instance anywhere. BUT, if the system destroys the Activity (due to space constraints), it saves a Bundle object (key-value pair collection) that describes the Activity's state (position of screen, selected/focused Views, entered text, etc.) 
+	*The system destroys and recreates activities when the screen is rotated.
+
+	I found proc/meminfo! DDMS in Eclipse lets me get at it!
+	Using DDMS, I can prove that killProcess() definitely kills the process - but the task still holds a reference to it so it can recreate it later.
+	The Allocation tracker allows me to look at objects being allocated to memory by a given process.
+	The Threads tab lets me look at all of the threads of a process
+		For example, my activitygenerator has 9 threads
+			1	1076	Native	247853	5893	main	
+			*2	1078	VmWait	10	46	HeapWorker	
+			*3	1079	VmWait	38	2	GC	
+			*4	1080	VmWait	0	0	Signal Catcher	
+			*5	1081	Runnable	383	37	JDWP	
+			*6	1082	VmWait	18	12	Compiler	
+			7	1083	Native	0	0	Binder Thread #1	
+			8	1084	Native	0	0	Binder Thread #2	
+			9	2958	Native	0	0	Binder Thread #3	
+	The HeapWorker, Signal Catcher, Compiler belong to the DVM. GC is garbage collection. JDWP is a Java debugger. Binder threads wait for IPC from other activities.
+	
+	
+
+
+2. Does HOME work the way it does b/c it is the first Activity launched, or is it special? 
+	a.How does the framework send you there?
+	
+Ok, so here's an excerpt from the Launcher source:
+
+public boolean dispatchKeyEvent(KeyEvent event) {
+        if (event.getAction() == KeyEvent.ACTION_DOWN) {
+            switch (event.getKeyCode()) {
+                case KeyEvent.KEYCODE_BACK:
+                    return true;
+                case KeyEvent.KEYCODE_HOME:
+                    return true;
+            }
+        } else if (event.getAction() == KeyEvent.ACTION_UP) {
+            switch (event.getKeyCode()) {
+                case KeyEvent.KEYCODE_BACK:
+                    if (!event.isCanceled()) {
+                        mWorkspace.dispatchKeyEvent(event);
+                        if (mDrawer.isOpened()) {
+                            closeDrawer();
+                        } else {
+                            closeFolder();
+                        }
+                    }
+                    return true;
+                case KeyEvent.KEYCODE_HOME:
+                    return true;
+            }
+        }
+        return super.dispatchKeyEvent(event);
+    }
+
+Basically, when you press Back at the Launcher, it does not finish() itself. Ok, confirmed.

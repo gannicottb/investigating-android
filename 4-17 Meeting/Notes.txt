@@ -1,0 +1,50 @@
+Notes on ActivityGenerator
+
+Using BitmapFactory.decodeResource on a 36MB file made the whole process crash to Home, no error message. Huh. I'll try a smaller one, then.
+
+> Very slow to install for some reason. Probably that dang ol' 36MB file in the drawable directory. hm.
+> Much faster after removing the large files. 
+
+Child activity returns a PID to the generator. So that's good.
+
+The child activities have to be singleTop.. I think.. I'll try singleInstance
+>
+> Didn't work. Maybe making one at a time is fine.
+
+>Wow, the ActivityGenerator's children are being destroyed after they start the generator again.
+
+--
+I'm starting the child activities with FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_MULTIPLE_TASK, and they have standard launch mode.
+
+>The child activities are being put into their own tasks, but when they send the intent back to the Generator, the onNewIntent() isn't being fired.
+>When I manually tried to kill the child process, I was directed to a new Child activity.
+
+I set the child activities to display their PIDs.
+>I created a new child with PID: 359. I clicked "Dismiss". I then entered that id into the process killer in the Generator. I was sent to a new child with PID: 367. When I tried to kill process 367, I was sent to PID: 375. ShowTasks revealed that there was one Generator class and one BlankActivity class (presumably PID: 375). Kill 375 -> 391. Still only one BlankActivity task. What does this mean? It looks like it did kill the process I asked it to, but the Toast didn't fire, strangely. It also created a new instance to replace it, and sent me there (very unexpected behavior).
+
+>It turns out that the Activities I was creating had the same PID as the Generator. So "Each Activity gets its own Process" may not be true (!)
+
+Also, THIS from <http://stackoverflow.com/questions/6070280/is-it-possible-to-start-a-activity-as-a-new-process>: "In order to overload the system by starting new processes over and over ... there's a well known bug that will get you root access once the PID limit is reached and ADB tries to restart. As it boots it does so in super user mode. After it gets done with it's activities it tries to set its permissions down to be a regular user but since the PID cap has been reached that process fails. You're left with shell access and root. That'd be my guess for why he wants it ;) – Bill Mote May 20 '11 at 18:55"
+
+Apparently I can specify different process names in the manifest for my activities. I'll try that now.
+>Had a launch error - process names need a : before the name in the string resource.
+>Takes a long time for the debugger to attach to my custom-named process for some reason.
+I'll try to remove the process name for the generator activity. Backup:   android:process="@string/generator_process"
+>Yeah, that got it attaching quickly again.
+>The child activity has a different PID now!
+>When I called killProcess on the new PID, nothing happened. ShowTasks reveals that the BlankActivity task is still there.
+>When I tried to relaunch ActivityGenerator from Home, I got a black screen. Wow. (this was probably a breakpoint)
+>The app behaves normally until I go home and try to launch the generator again.
+
+>Interesting - When I create a 2nd child activity, I do get another task. However, it displays the same PID.
+
+I'm adding SingleTop flags to the StartActivity intent to start the generator again.
+>No discernible difference.
+I'm going to display availMem in the generator so that I can see if killing the processes has any effect.
+
+>onNewIntent() only called when I start up the Generator again from the launcher.
+>KillProcess() does seem to prompt the system to give new Children a new PID, but the tasks don't go away.
+
+The "Fat" Activities are killed shortly after being stopped - probably because they're taking up too much memory.
+
+

@@ -1,0 +1,74 @@
+From: 
+http://developer.android.com/guide/components/tasks-and-back-stack.html
+http://developer.android.com/guide/topics/manifest/activity-element.html
+
+Normally when an activity is started, it's associated with the task of the activity that started it and it stays there for its entire lifetime. 
+Most applications should not interrupt the default behavior for activities and tasks
+
+Activities with the same affinity conceptually belong to the same task (to the same "application" from the user's perspective). The affinity of a task is determined by the affinity of its root activity.
+An activity with the "standard" or "singleTop" launch mode can be instantiated multiple times.
+The "standard" and "singleTop" modes differ from each other in just one respect: Every time there's a new intent for a "standard" activity, a new instance of the class is created to respond to that intent. 
+Similarly, a new instance of a "singleTop" activity may also be created to handle a new intent. However, if the target task already has an existing instance of the activity at the top of its stack, that instance will receive the new intent (in an onNewIntent() call); a new instance is not created.
+
+The "singleTask" and "singleInstance" modes also differ from each other in only one respect: A "singleTask" activity allows other activities to be part of its task. It's always at the root of its task, but other activities (necessarily "standard" and "singleTop" activities) can be launched into that task. A "singleInstance" activity, on the other hand, permits no other activities to be part of its task. It's the only activity in the task. If it starts another activity, that activity is assigned to a different task — as if FLAG_ACTIVITY_NEW_TASK was in the intent.
+
+Normally, the system clears a task (removes all activities from the stack above the root activity) in certain situations when the user re-selects that task from the home screen. Typically, this is done if the user hasn't visited the task for a certain amount of time, such as 30 minutes.
+
+>How many threads?
+Audio threads
+background threads
+application threads
+system display threads
+
+from people.debian.org
+
+Process attributes declared in manifest
+Thread helper classes (Looper, Handler, HandlerThread)
+"The system maintains a pool of transaction threads in each process that it runs in. These threads are used to dispatch all IPCs coming in from other processes. For example, when an IPC is made from process A to process B, the calling thread in A blocks in transact() as it sends the transaction to process B. The next available pool thread in B receives the incoming transaction, calls Binder.onTransact() on the target object, and replies with the result Parcel. Upon receiving its result, the thread in process A returns to allow its execution to continue. In effect, other processes appear to use as additional threads that you did not create executing in your own process." from developer.android.com/reference/android/os/IBinder.html
+
+SurfaceManager, WindowManager are threads of a single process (system_server)
+Zygote is a process started on system initialization
+It preloads java classes and resources
+forks system_server
+listens silently on /dev/socket/zygote
+
+zygote init -> system server -> activity manager
+
+>Dalvik VM
+This VM actually runs the apps. It uses a register-based architecture.
+Java bytecode is not executed. Java .class files are converted into .dex format
+Uses a just-in-time compiler.
+Constant pool modified to use only 32-bit indices.
+
+>ActivityManager
+This object will let you...
+class	ActivityManager.MemoryInfo	Information you canretrieve about the available memory through getMemoryInfo(ActivityManager.MemoryInfo). 
+class	ActivityManager.ProcessErrorStateInfo	Information you can retrieve about any processes that are in an error condition. 
+class	ActivityManager.RecentTaskInfo	Information you can retrieve about tasks that the user has most recently started or visited. 
+class	ActivityManager.RunningAppProcessInfo	Information you can retrieve about a running process. 
+class	ActivityManager.RunningServiceInfo	Information you can retrieve about a particular Service that is currently running in the system. 
+class	ActivityManager.RunningTaskInfo	Information you can retrieve about a particular task that is currently "running" in the system. 
+
+>InputDispatcher (comes from WindowManager Service)
+You can use dumpsys with adb to get interesting information about the InputDispatcher
+-state of the input queue
+-whether ANR is in progress
+-which window is being touched
+
+>Context is an abstract class that can retrieve the handle to a system-level service with getSystemService(String name).
+So when you create a WindowManager object and instantiate with getSystemService(Context.WINDOW_SERVICE), you're getting a handle to the service (outside of your app).
+
+>WindowManagerService
+The WindowManager object that you retrieve from the Context doesn't let you do much:
+//Public Methods
+abstract Display	 getDefaultDisplay()
+	Returns the Display upon which this WindowManager instance will create new windows.
+abstract void	 removeViewImmediate(View view)
+	Special variation of removeView(View) that immediately invokes the given view hierarchy's View.onDetachedFromWindow() methods before returning.
+//Inherited Methods from interface android.view.ViewManager
+abstract void	 addView(View view, ViewGroup.LayoutParams params)
+	Assign the passed LayoutParams to the passed View and add the view to the window.
+abstract void	 removeView(View view)
+abstract void	 updateViewLayout(View view, ViewGroup.LayoutParams params)
+
+I think the WindowManagerService does a lot more than the WindowManager object made available to the developer.
