@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseActivity"
+    android:orientation="vertical" >
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    	
+    android:id="@+id/background"      
+    android:background="@android:color/white">
+  	<Button 
+	  	android:id="@+id/button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:text="@string/button1"
+	    android:layout_weight="1"
+	    android:layout_gravity="top" />   
+	<Button 
+		android:id="@+id/button2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:text="@string/button2" 
+		android:layout_weight="1"
+		android:layout_gravity="center" />            
+	<Button
+		android:id="@+id/button3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/button3" 
+		android:layout_weight="1"
+		android:layout_gravity="bottom" />
+</LinearLayout>
+ <fragment class="edu.lynchburg.TransparentFragment"
+        android:id="@+id/transLayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"      
+        />
+ </RelativeLayout>

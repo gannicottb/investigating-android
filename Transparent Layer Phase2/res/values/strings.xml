@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TL v0.2</string> 
+    <string name="menu_settings">Settings</string>
+    <string name="button1">Top</string>
+    <string name="button2">Middle</string>
+    <string name="button3">Bottom</string>
+
+</resources>

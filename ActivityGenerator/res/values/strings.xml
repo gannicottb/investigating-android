@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActivityGenerator</string>
+    <string name="generator_process">:GeneratorProcess</string>
+    <string name="blank_process">:BlankActivityProcess</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="imgDescription">This is an optional image for the Activity to hold.</string>
+    <string name="btnDismissText">Dismiss (return to Generator)</string>
+    <string name="status_default">PID should go here.</string>
+	<string name= "btnCreateB">Create a new Activity.</string>
+	<string name="btnCreateF">Create a new Activity with an Image in it.</string>
+	<string name="btnKillP">Kill the Process</string>
+	<string name="processListDescription">List of processes created by this generator</string>
+
+</resources>
